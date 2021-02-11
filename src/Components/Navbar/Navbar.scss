@@ -7,63 +7,10 @@ $gray-color: rgba(163, 163, 163, 0.356);
     border-right: 1px solid rgba(192, 192, 192, 0.33);
     height: 100vh;
     position: fixed;
-    .logo{
-        img {
-            height: 120px;
-            width: 120px;
-        }
-    }
-    .btn-add{
-        background-color: $gray-color;
-        border-radius: 8px;
-        .navbar-new{
-            .text-btn {
-                color: $item-color;
-                float: left;
-                font-weight: 500;
-                width: 58%;
-            }
-            i {
-                float: right;
-                font-size: 28px;
-                text-align: left;
-                width: 28%;
-            }
-            &:hover {
-                .text-btn {
-                    color: $item-color-black
-                }
-            }
-        }
-    }
-    .w{
-        width: 100%;
-    }
-    .nav-items{
-        .link{
-            .icon-1{
-                color: $item-color;
-                width: 20%;
-                i {
-                    margin-top: 12px;
-                    position: absolute;
-                }
-                
-            }
-            .name{
-                width: 60%;
-                .nav-link{
-                    color: $item-color;
-                    font-weight: 400;
-                    text-align: justify;
-                }
-            }
-            &:hover{
-                .icon-1, .name .nav-link{
-                    color: $item-color-black;
-                }
-            }
-        }
-    }
-
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 100;
+    @import './Navbar-sons.scss';
 }
+

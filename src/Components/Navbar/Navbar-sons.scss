@@ -1,0 +1,88 @@
+.w{
+    width: 100%;
+}
+.container {
+    max-width: 230px;
+}
+.container-items{
+    overflow: hidden;
+    .logo{
+        i {
+            font-size: 1.55rem;
+            color: $item-color;
+            padding-top: 10px;
+            padding-right: 10px; 
+            margin-left: 2px;
+            cursor: pointer;
+        }
+        img {
+            // overflow: hidden;
+            height: 120px;
+            width: 120px;
+        }
+    }
+
+    .btn-add{
+        background-color: $gray-color;
+        border-radius: 8px;
+        overflow: hidden;
+        .navbar-new{
+            .text-btn {
+                color: $item-color;
+                float: left;
+                font-weight: 500;
+                width: 58%;
+            }
+            i {
+                float: right;
+                font-size: 28px;
+                text-align: left;
+                width: 28%;
+            }
+            &:hover {
+                .text-btn {
+                    color: $item-color-black
+                }
+            }
+        }
+    }
+
+
+    .nav-items{
+        .link{
+            .icon-1{
+                color: $item-color;
+                width: 20%;
+                i {
+                    margin-top: 12px;
+                    position: absolute;
+                }
+                
+            }
+            .name{
+                width: 60%;
+                .nav-link{
+                    color: $item-color;
+                    font-weight: 400;
+                    text-align: justify;
+                }
+            }
+            &:hover{
+                .icon-1, .name .nav-link{
+                    color: $item-color-black;
+                }
+            }
+        }
+    }
+
+    .user-people {
+        .people {
+            float: left;
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 30px;
+            }
+        }
+    }
+}
