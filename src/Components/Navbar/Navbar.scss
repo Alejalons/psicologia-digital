@@ -3,14 +3,102 @@ $item-color: #1B9AAA;
 $item-color-black: #136F7C;
 $gray-color: rgba(163, 163, 163, 0.356);
 
-.Navbar-left{
-    border-right: 1px solid rgba(192, 192, 192, 0.33);
-    height: 100vh;
+.l-navbar {
     position: fixed;
     top: 0;
     left: 0;
+    width: 92px;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    padding: 1.5rem 1.5rem 2rem;
     transition: .5s;
-    z-index: 100;
-    @import './Navbar-sons.scss';
+    border-right: 1px solid rgba(192, 192, 192, 0.33);
+    /* ========================NAV==== */
+/* ordena item dentro de la barra lateral*/
+    .nav {
+        height: 100%;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+        overflow: hidden;
+        .nav__brand {
+            display: grid;
+            grid-template-columns: max-content max-content;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            .nav__toggle{
+                color: $item-color;
+                font-size: 1.55rem;
+                padding: .75rem;
+                cursor: pointer;
+            }
+            .nav__logo {
+                height: 120px;
+                width: 120px;
+            }
+        }
+        
+          /* ==diseño al estar comprimido */
+        .Link-l {
+            text-decoration: none;
+        }
+        .nav__link {
+            display: grid;
+            grid-template-columns: max-content max-content;
+            align-items: center;
+            column-gap: .75rem;
+            padding: .75rem;
+            color: $item-color;
+            margin-bottom: -25px;
+            transition: .3s;
+            margin-left: 1px;
+            cursor: pointer;
+            &:hover {
+                color: $item-color-black
+            }
+            .icon-link{
+                width: 20%;
+            }
+            .name-link{
+                width: 40%;
+            }
+            .icon-arrow {
+                width: 20%;
+            }
+            .nav__icon{
+                font-size: 1.25rem;
+                width: 100%;
+            }
+            .nav__name{
+                padding-top: 12px;
+                
+                font-size: 20px;
+            }
+            
+        }
+
+        .user-people {
+            .people{
+                float: left;
+                img {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 30px;
+                }
+            }
+            .description {
+                font-weight: 400;
+                color: rgb(149, 149, 149)
+            }
+        }
+    }
 }
+/* ============Expander Menu===== */
+// .expander {
+//     width: calc(92px + 9.25rem);
+// } 
+.expander {
+    width: 16%;
+} 
 
