@@ -22,12 +22,12 @@ function Navbar() {
 
     return (
         <>
-            <div className={click ? 'expander l-navbar bg-light': "l-navbar bg-light"} id="navbar">
+            <div className={`${click ? 'expander': ''}  l-navbar bg-light`} id="navbar">
                 <nav className="nav">
                     <div className="d-flex flex-column justify-content-between">
                         <div className="nav__brand">
                             <i 
-                                className={click ? 'fas fa-expand-alt nav__toggle': 'fas fa-compress-alt nav__toggle'}
+                                className={`${click ? 'fas fa-expand-alt ': 'fas fa-compress-alt'} nav__toggle`}
                                 onClick={handleClick}
                             ></i>
                             <img src="./images/LogoEliz.png" className="nav__logo" alt=""/>
@@ -43,7 +43,7 @@ function Navbar() {
                                     >
                                         <div  className="nav__link row d-flex flex-row">
                                             <div className="icon-link">
-                                                <i className={item.icon}/>
+                                                <i className={item.icon} />
                                             </div>
                                             <div className="name-link">
                                                 <p className="nav__name ">{item.title}</p>

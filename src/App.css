@@ -7,7 +7,23 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-.body-content {
+.body-container {
     float: right;
     width: 90%;
 }
+@media screen and ( max-width: 938px ){
+    .body-container{
+        width: 85%;
+    }
+}
+@media screen and ( max-width: 617px ){
+    .body-container{
+        width: 80%;
+    }
+}
+@media screen and ( max-width: 464px ){
+    .body-container{
+        width: 78%;
+    }
+}
+

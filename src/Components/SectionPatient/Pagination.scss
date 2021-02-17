@@ -1,0 +1,9 @@
+.page-item{
+    .page-link {
+        cursor: pointer; 
+        &:hover{
+            color: #fff;
+            background-color: #1B9AAA;
+        }
+    }
+}
