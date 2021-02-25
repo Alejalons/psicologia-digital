@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import Patient from './Patient';
 import Pagination from './Pagination';
+import TittleSections from '../SectionTittle/TittleSections';
 import {getData} from '../../Helpers/getData';
-import {Link} from 'react-router-dom';
 import './SectionPatient.scss';
 
 function SectionPatient() {
@@ -50,22 +50,11 @@ function SectionPatient() {
         <>
             <div className="body-container">
                 <div className="SectionPatient d-flex flex-column ">
-
-                    <div className="tittle-Patient d-flex justify-content-end mt-3">
-                        <div className="tittle-name mr-auto">
-                            <h2>Listado de Pacientes</h2>
-                        </div>
-                        <div className="btn-patient">
-                            <Link
-                                to="/Ingreso"
-                                className="mr-5"
-                            >
-                                <button type="button" className="btn">Ingreso de Paciente</button>
-                            </Link>
-                            
-                        </div>
-                        <div className="inner">&nbsp;</div>
-                    </div>
+                    
+                    <TittleSections
+                        tittle="Listado de Pacientes"
+                        componentFather="SectionPatient"
+                    />
 
                     {/* crear otro componente */}
                     <div className="SearchPatient d-flex mt-3">
