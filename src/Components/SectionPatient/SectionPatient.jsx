@@ -2,21 +2,15 @@ import React, {useState, useEffect} from 'react';
 import Patient from './Patient';
 import Pagination from './Pagination';
 import TittleSections from '../SectionTittle/TittleSections';
-import {getData} from '../../Helpers/getData';
 import './SectionPatient.scss';
+import {useFetchPatient} from "../../Hooks/useFetchPatient";
+import Loanding from '../Loanding/Loanding';
 
 function SectionPatient() {
-
-    const [patients, setPatients] = useState([]);
+    
+    const {data:patients, loanding} = useFetchPatient();
     const [patientsFilter, setPatientsFilter] = useState([]);
-
-    useEffect( () => {
-
-        getData()
-            .then( data => setPatients(data))
-            .catch(err => console.warn(err));
-
-    }, [])
+    
 
     //================SEARCH=========================
     const handleInputChange = async (e) => {
@@ -72,8 +66,12 @@ function SectionPatient() {
                         </div>
                     </div>
 
-                    <div className="container body-patient mt-2 d-flex flex-wrap align-content-start">
+                    <div className="container body-patient mt-2 d-flex flex-wrap justify-content-center no-gutters">
 
+                        {
+                            loanding && <Loanding />
+                        }
+                        
                         <Patient
                             posts = {currentPosts}
                         />
