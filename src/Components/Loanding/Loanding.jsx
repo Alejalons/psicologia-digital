@@ -3,7 +3,7 @@ import './Loanding.scss';
 
 function Loanding() {
     return (
-        <div class="lds-circle"><div></div></div>
+        <div className="lds-circle"><div></div></div>
     )
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionPatient from '../SectionPatient/SectionPatient';
+import SectionPatient from '../Patient/SectionListPatient/SectionPatient';
 
 function Patient() {
     return (

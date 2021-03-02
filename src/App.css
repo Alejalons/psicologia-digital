@@ -6,17 +6,16 @@
     box-sizing: border-box;
 }
 
-body {
+#root {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(7, 7, 7, 0.059);
+    /* background-color: rgb(246, 247, 251); */
     font-family: 'Roboto', sans-serif;
 }
 .body-container {
-    
     float: right;
     width: 90%;
-}
-.reset-padding{
-    padding-left: -15px;
-    padding-right: -15px;
 }
 @media screen and ( max-width: 938px ){
     .body-container{

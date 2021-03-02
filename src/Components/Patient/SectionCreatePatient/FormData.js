@@ -8,7 +8,7 @@ export const InputData = [
                 htmlforLabel: 'name-input',
                 idInput: 'name-input',
                 classNameLabel: 'form-label',
-                nameLabel:'Nombre:',
+                nameLabel:'Nombre',
                 typeInput: 'text',
                 nameInput: 'name',
                 classNameInput: 'form-control',
@@ -20,7 +20,7 @@ export const InputData = [
                 idInput: 'age-input',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Edad:',
+                nameLabel:'Edad',
                 // ==========input===================
                 typeInput: 'number',
                 nameInput: 'age',
@@ -33,7 +33,7 @@ export const InputData = [
                 idInput: 'date-birthday',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Fecha de Nacimiento:',
+                nameLabel:'Fecha de Nacimiento',
                 // ==========input===================
                 typeInput: 'date',
                 nameInput: 'birthday',
@@ -47,7 +47,7 @@ export const InputData = [
                 idInput: 'groupSelec-genger',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Sexo:',
+                nameLabel:'Sexo',
                 // ==========input===================
                 nameInput: 'selecGenger',
                 classNameInput: 'form-control',
@@ -82,7 +82,7 @@ export const InputData = [
                 idInput: 'scholarship',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Escolaridad:',
+                nameLabel:'Escolaridad',
                 // ==========input===================
                 typeInput: 'text',
                 nameInput: 'scholarship',
@@ -95,7 +95,7 @@ export const InputData = [
                 idInput: 'martital-status',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Estado Civil:',
+                nameLabel:'Estado Civil',
                 // ==========input===================
                 nameInput: 'selectMaritalStatus',
                 classNameInput: 'form-control',
@@ -145,7 +145,7 @@ export const InputData = [
                 idInput: 'profession',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Ocupación:',
+                nameLabel:'Ocupación',
                 // ==========input===================
                 typeInput: 'text',
                 nameInput: 'profession',
@@ -158,7 +158,7 @@ export const InputData = [
                 idInput: 'address',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Domicilio:',
+                nameLabel:'Domicilio',
                 // ==========input===================
                 typeInput: 'text',
                 nameInput: 'address',
@@ -172,7 +172,7 @@ export const InputData = [
                 idInput: 'Cellphone',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Celular:',
+                nameLabel:'Celular',
                 // ==========input===================
                 typeInput: 'text',
                 nameInput: 'Cellphone',
@@ -185,7 +185,7 @@ export const InputData = [
                 idInput: 'phone',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Teléfono:',
+                nameLabel:'Teléfono',
                 // ==========input===================
                 typeInput: 'text',
                 nameInput: 'phone',
@@ -199,7 +199,7 @@ export const InputData = [
                 idInput: 'email',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Correo Electrónico:',
+                nameLabel:'Correo Electrónico',
                 // ==========input===================
                 typeInput: 'mail',
                 nameInput: 'email',
@@ -213,7 +213,7 @@ export const InputData = [
                 idInput: 'consul',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Motivo Consulta:',
+                nameLabel:'Motivo Consulta',
                 // ==========input===================
                 typeInput: 'text',
                 nameInput: 'consul',
@@ -226,7 +226,7 @@ export const InputData = [
                 idInput: 'interview',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Entrevista Inicial:',
+                nameLabel:'Entrevista Inicial',
                 // ==========input===================
                 typeInput: 'text',
                 nameInput: 'interview',
@@ -245,7 +245,7 @@ export const InputData = [
                 idInput: 'history-textarea',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Historia Clínica:',
+                nameLabel:'Historia Clínica',
                 // ==========input===================
                 typeInput: 'text',
                 nameInput: 'clinicHistory',
@@ -259,7 +259,7 @@ export const InputData = [
                 idInput: 'family-input',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Dinámica Familiar:',
+                nameLabel:'Dinámica Familiar',
                 // ==========input===================
                 typeInput: 'text',
                 nameInput: 'family',
@@ -273,7 +273,7 @@ export const InputData = [
                 idInput: 'diagnosis-textarea',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Hipótesis y Posible Diagnóstico:',
+                nameLabel:'Hipótesis y Posible Diagnóstico',
                 // ==========input===================
                 typeInput: 'text',
                 nameInput: 'diagnosis',
@@ -287,7 +287,7 @@ export const InputData = [
                 idInput: 'FamilyNucleus-textarea',
                 // =============label=============
                 classNameLabel: 'form-label',
-                nameLabel:'Descripción del Núcleo Familiar:',
+                nameLabel:'Descripción del Núcleo Familiar',
                 // ==========input===================
                 typeInput: 'text',
                 nameInput: 'FamilyNucleus',

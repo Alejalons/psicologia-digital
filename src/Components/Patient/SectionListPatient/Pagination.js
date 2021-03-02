@@ -9,10 +9,10 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
     }
 
     return (
-        <div className="col-12 mt-3 ml-2">
+        <div className="d-flex justify-content-center col-12 mt-4 ml-2">
             <ul className='pagination'>
                 {pageNumbers.map(number => (
-                    <li key={number} className='page-item'>
+                    <li key={number} className='page-item mr-2 rounded-circle'>
                         <p onClick={() => paginate(number)}  className='page-link'>
                             {number}
                         </p>

@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import Patient from './Patient';
 import Pagination from './Pagination';
-import TittleSections from '../SectionTittle/TittleSections';
+import TittleSections from '../../TittleForPage/TittleSections';
 import './SectionPatient.scss';
-import {useFetchPatient} from "../../Hooks/useFetchPatient";
-import Loanding from '../Loanding/Loanding';
+import {useFetchPatient} from "../../../Hooks/useFetchPatient";
+import Loanding from '../../Loanding/Loanding';
 
 function SectionPatient() {
     
@@ -24,9 +24,9 @@ function SectionPatient() {
         }
     }
 
-    // ==============PAGINATE=================
+    // ==============PAGINATE===================
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage] = useState(10);
+    const [postsPerPage] = useState(9);
 
     // Get current posts
     const indexOfLastPost = currentPage * postsPerPage;
