@@ -1,5 +1,7 @@
 import React from 'react';
 import './Patient.scss';
+import PropTypes from 'prop-types'
+
 
 function Patient( {posts}) {
 
@@ -37,6 +39,10 @@ function Patient( {posts}) {
             }
         </>
     )
+}
+
+Patient.prototype = {
+    posts: PropTypes.array.isRequired
 }
 
 export default Patient;

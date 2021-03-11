@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types'
+
 import {Link} from 'react-router-dom';
 import './TittleSections.scss';
 
@@ -23,6 +25,11 @@ function TittleSections({tittle,componentFather}) {
             
         </>
     )
+}
+
+TittleSections.prototype = {
+    tittle: PropTypes.string.isRequired,
+    componentFather: PropTypes.string.isRequired
 }
 
 export default TittleSections

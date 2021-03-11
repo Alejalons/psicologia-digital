@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Navbar debe funcionar correctamente snapshot  1`] = `
+<Fragment>
+  <div
+    className="  l-navbar bg-light"
+    id="navbar"
+  >
+    <nav
+      className="nav"
+    >
+      <div
+        className="d-flex flex-column justify-content-between"
+      >
+        <div
+          className="nav__brand"
+        >
+          <i
+            className="fas fa-compress-alt nav__toggle"
+            onClick={[Function]}
+          />
+          <img
+            alt=""
+            className="nav__logo"
+            src="./images/LogoEliz.png"
+          />
+        </div>
+        <div
+          className="nav__list"
+        >
+          <Link
+            className="Link-l"
+            key="0"
+            onClick={[Function]}
+            to="/"
+          >
+            <div
+              className="nav__link row d-flex flex-row"
+            >
+              <div
+                className="icon-link"
+              >
+                <i
+                  className="fas fa-home nav__icon"
+                />
+              </div>
+              <div
+                className="name-link"
+              >
+                <p
+                  className="nav__name "
+                >
+                  Inicio
+                </p>
+              </div>
+              <div
+                className="icon-arrow text-right"
+              >
+                <i
+                  className="fas fa-chevron-right text-right"
+                />
+              </div>
+            </div>
+          </Link>
+          <Link
+            className="Link-l"
+            key="1"
+            onClick={[Function]}
+            to="/Paciente"
+          >
+            <div
+              className="nav__link row d-flex flex-row"
+            >
+              <div
+                className="icon-link"
+              >
+                <i
+                  className="fas fa-user-friends nav__icon "
+                />
+              </div>
+              <div
+                className="name-link"
+              >
+                <p
+                  className="nav__name "
+                >
+                  Paciente
+                </p>
+              </div>
+              <div
+                className="icon-arrow text-right"
+              >
+                <i
+                  className="fas fa-chevron-right text-right"
+                />
+              </div>
+            </div>
+          </Link>
+          <Link
+            className="Link-l"
+            key="2"
+            onClick={[Function]}
+            to="/Analisis"
+          >
+            <div
+              className="nav__link row d-flex flex-row"
+            >
+              <div
+                className="icon-link"
+              >
+                <i
+                  className="fas fa-align-left nav__icon "
+                />
+              </div>
+              <div
+                className="name-link"
+              >
+                <p
+                  className="nav__name "
+                >
+                  Analisis
+                </p>
+              </div>
+              <div
+                className="icon-arrow text-right"
+              >
+                <i
+                  className="fas fa-chevron-right text-right"
+                />
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div
+          className="user-people mt-auto  "
+        >
+          <div
+            className="people mt-2 mr-3"
+          >
+            <img
+              alt=""
+              src="./images/people.jpg"
+            />
+          </div>
+          <div
+            className="description mt-2 "
+          >
+            <p
+              className="name"
+            >
+              Caskantr 
+              <br />
+               Psicóloga
+            </p>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</Fragment>
+`;

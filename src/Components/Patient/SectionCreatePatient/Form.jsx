@@ -1,7 +1,8 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import PropTypes from 'prop-types';
 import './Form.scss';
 import {InputData} from './FormData';
-import {renderSwitch} from '../../../Hooks/getTypeInput';
+import {renderSwitch} from '../../../Helpers/getTypeInput';
 
 function Form({handleOnchange,handleSubmit, whereIs}) {
     
@@ -69,5 +70,9 @@ function Form({handleOnchange,handleSubmit, whereIs}) {
         </>
     )
 }
-
+Form.prototype = {
+    handleOnchange: PropTypes.func.isRequired,
+    handleSubmit: PropTypes.func.isRequired,
+    whereIs: PropTypes.useState.isRequired
+}
 export default Form;
