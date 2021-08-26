@@ -73,6 +73,6 @@ function Form({handleOnchange,handleSubmit, whereIs}) {
 Form.prototype = {
     handleOnchange: PropTypes.func.isRequired,
     handleSubmit: PropTypes.func.isRequired,
-    whereIs: PropTypes.useState.isRequired
+    // whereIs: PropTypes.useState.isRequired
 }
 export default Form;

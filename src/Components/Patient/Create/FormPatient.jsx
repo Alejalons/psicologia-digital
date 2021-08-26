@@ -10,7 +10,8 @@ function FormPatient() {
         msj: ''
     });
     const [whereIs, setWhereIs] = useState([]);
-
+    
+    //modelo de los pacientes
     const [patientClass, setPatientClass] = useState({
         name: '',
         age: '',
