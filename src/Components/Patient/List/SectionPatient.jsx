@@ -13,6 +13,7 @@ function SectionPatient() {
     
 
     //================SEARCH=========================
+    // FUNCION PARA BUSCAR PACIENTE POR NOMBRE 
     const handleInputChange = async (e) => {
 
         if(e.target.value === ''){

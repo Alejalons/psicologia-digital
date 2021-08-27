@@ -2,7 +2,7 @@ import React from 'react';
 import './Patient.scss';
 import PropTypes from 'prop-types'
 
-
+//Componente de listado de Cajas con informacion inicial de un paciente
 function Patient( {posts}) {
 
     return (
@@ -15,10 +15,10 @@ function Patient( {posts}) {
                         </div>
                         
                         <div className="info d-flex flex-row">
-                            <div className="w-50 border-right">
+                            <div className="w-50 border-right bg-light">
                                 info <br/>                              
                             </div>
-                            <div>
+                            <div className="w-50 border-right bg-light">
                                 caja 2
                             </div>
                         </div>
