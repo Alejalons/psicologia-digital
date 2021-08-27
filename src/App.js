@@ -6,11 +6,12 @@ import Home from './Components/Pages/Home';
 import Patient from './Components/Pages/Patient';
 import Create from './Components/Pages/Create';
 
+import ProyectoState from './Context/Patient/PatientState';
 
 function App() {
   return (
     <>
-      
+      <ProyectoState>
         <Router>
 
           <Navbar />
@@ -21,7 +22,7 @@ function App() {
               <Route path='/Ingreso' component={Create}/>
           </Switch>
         </Router>
-      
+      </ProyectoState>
     </>
   );
 }

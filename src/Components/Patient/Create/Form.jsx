@@ -1,11 +1,17 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import PropTypes from 'prop-types';
 import './Form.scss';
 import {InputData} from './FormData';
 import {renderSwitch} from '../../../Helpers/getTypeInput';
+import PatientContext from '../../../Context/Patient/PatientContext';
 
 function Form({handleOnchange,handleSubmit, whereIs}) {
     
+    //context de paciente state
+    const _patientContext = useContext(PatientContext);
+    const {errorForm, mostrarHolaMundo} = _patientContext;
+    //==
+
     const isValid = (nameInput) => {
         try {
             const result = whereIs[0].find( element => element  === nameInput );
@@ -24,6 +30,12 @@ function Form({handleOnchange,handleSubmit, whereIs}) {
             <form className="g-3 row col-md-12 form-patient" onSubmit={handleSubmit}>
                 <div className="btn-submit col-md-12 mb-2 d-flex justify-content-end">
                     <div>
+                        <button
+                            type="button"
+                            className="cancel-patient btn btn-light mr-2"
+                            onClick={mostrarHolaMundo}
+                        >test</button>  
+
                         <button
                             type="button"
                             className="cancel-patient btn btn-light mr-2"
