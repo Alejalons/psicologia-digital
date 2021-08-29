@@ -1,11 +1,11 @@
-import React, {useState, useContext} from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import './Form.scss';
 import {InputData} from './FormData';
 import {renderSwitch} from '../../../Helpers/getTypeInput';
 import PatientContext from '../../../Context/Patient/PatientContext';
 
-function Form({handleOnchange,handleSubmit, whereIs}) {
+function Form({handleOnchange,handleSubmit, whereIsError}) {
     
     //context de paciente state
     const _patientContext = useContext(PatientContext);
@@ -14,14 +14,15 @@ function Form({handleOnchange,handleSubmit, whereIs}) {
 
     const isValid = (nameInput) => {
         try {
-            const result = whereIs[0].find( element => element  === nameInput );
+            //whereIsError contiene todos los errores 
+            const result = whereIsError[0].find( element => element  === nameInput );
             if(result === undefined){
                 return false;
             }else{
                 return true;
             }
         } catch (error) {
-            console.warn(error)
+            // console.warn(error)
         }
     };
 
@@ -67,7 +68,8 @@ function Form({handleOnchange,handleSubmit, whereIs}) {
                                                 {renderSwitch(dat.typeInputTag, dat,handleOnchange, isValid)}
                                                 
                                                 {
-                                                    isValid(dat.nameInput) && <p className="text-danger">Debe Ingresar {dat.nameLabel}</p>
+                                                    isValid(dat.nameInput) && 
+                                                    <p className="text-danger">Debe Ingresar {dat.nameLabel}</p>
                                                 }
                                                 
                                             </div>

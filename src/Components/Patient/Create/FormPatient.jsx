@@ -9,7 +9,7 @@ function FormPatient() {
         exists: false,
         msj: ''
     });
-    const [whereIs, setWhereIs] = useState([]);
+    const [whereIsError, setWhereIsError] = useState([]);
     
     //modelo de los pacientes
     const [patientClass, setPatientClass] = useState({
@@ -46,7 +46,7 @@ function FormPatient() {
 
 
         const item = [];
-        //patientClass por cada atributos
+        //patientClass por cada atributos del objeto patient
         for(const property in patientClass)
         {
             if (patientClass[property] === '') {
@@ -69,9 +69,8 @@ function FormPatient() {
             }
 
         }
-        setWhereIs([item]);
-
-        console.log(item.length);
+        //guarda todos los input que han salido erroneos
+        setWhereIsError([item]);
     }
     return (
         <>
@@ -86,7 +85,7 @@ function FormPatient() {
                         <Form
                             handleOnchange = {handleOnchange}
                             handleSubmit = {handleSubmit}
-                            whereIs = {whereIs}
+                            whereIsError = {whereIsError}
                         />
                     </div>
 

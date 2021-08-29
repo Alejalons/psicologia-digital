@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Patient from './Patient';
 import Pagination from './Pagination';
 import TittleSections from '../../TittleForPage/TittleSections';

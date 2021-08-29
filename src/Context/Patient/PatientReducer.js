@@ -2,14 +2,16 @@ import {
     VALIDATE_PATIENT
 } from '../../Types/index'
 
-export default(state, action) => {
+const PatientReducer = (state, action) => {
     switch (action.type) {
         case VALIDATE_PATIENT:
             return {
                 ...state,
-                errorForm: true 
+                errorForm: true
             }
         default:
-            break;
+            return state
     }
 }
+
+export default PatientReducer;

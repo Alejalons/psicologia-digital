@@ -201,7 +201,7 @@ export const InputData = [
                 classNameLabel: 'form-label',
                 nameLabel:'Correo Electrónico',
                 // ==========input===================
-                typeInput: 'mail',
+                typeInput: 'email',
                 nameInput: 'email',
                 classNameInput: 'form-control',
             },

@@ -1,10 +1,12 @@
 .SectionPatient {
     width: 100%;
+    
+    
     .SearchPatient{
         .input-icons {
             margin-right: 115px;
             i{
-                position:absolute;
+                position: absolute;
             }
             .icon { 
                 padding-top: 10px;
@@ -23,7 +25,7 @@
         }
     }
     .body-patient{
-        height: 100vh;
+        height: 100%;
     }
     
 }
