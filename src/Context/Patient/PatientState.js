@@ -29,7 +29,7 @@ const ProyectoState = props => {
 
     }, [])
 
-    //inicializacion de estado
+    //inicializacion de estado..
     const initialState = {
         errorForm: false,
         patients: {}
