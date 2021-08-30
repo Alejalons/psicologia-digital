@@ -11,35 +11,35 @@ import {
 
 const ProyectoState = props => {
 
-    const [patients, setPatients] = useState({
-        data: [],
-        loanding: true
-    });
+    const [_patients, setPatients] = useState([]);
 
-    useEffect( async () => {
+    const getDataPatient =  async () => {
         await axios.get(`https://rickandmortyapi.com/api/character`)
             .then( data => {
                 const {results:patient} = data.data;
                 setPatients({
                     data: patient,
-                    loanding: false
+                    loading: false
                 })
             })
             .catch(err => console.warn(err));
-
-    }, [])
+    }
 
     //inicializacion de estado..
     const initialState = {
         errorForm: false,
-        patients: {}
+        patients: { data: [], loading: true}
     }
 
     const [state, dispatch] = useReducer(PatientReducer, initialState);
 
-    const get_patient = () => {
+    //obtener el listado de pacientes
+    const get_patient = async () => {
+        await getDataPatient();
+
         dispatch({
             type: GET_PATIENT,
+            payload: _patients
         })
     }
     const mostrarHolaMundo = () => {

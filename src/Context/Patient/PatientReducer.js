@@ -1,5 +1,6 @@
 import {
-    VALIDATE_PATIENT
+    VALIDATE_PATIENT,
+    GET_PATIENT
 } from '../../Types/index'
 
 const PatientReducer = (state, action) => {
@@ -8,6 +9,11 @@ const PatientReducer = (state, action) => {
             return {
                 ...state,
                 errorForm: true
+            }
+        case GET_PATIENT:
+            return {
+                ...state,
+                patients: action.payload
             }
         default:
             return state
